@@ -109,13 +109,13 @@ function openModal(type, notification){
 		shadowBack.style.cssText = 'opacity: .35';
 	}, 1);
 
-	let modalClose = document.createElement('button');
-	modalClose.id = 'modalClose';
-	modalClose.innerText = 'close';
-	modalClose.modal = modal;
-	modalClose.shadowBack = shadowBack;
-	modalClose.addEventListener('click', closeModal);
-	modal.prepend(modalClose);
+	// let modalClose = document.createElement('button');
+	// modalClose.id = 'modalClose';
+	// modalClose.innerText = 'close';
+	// modalClose.modal = modal;
+	// modalClose.shadowBack = shadowBack;
+	// modalClose.addEventListener('click', closeModal);
+	// modal.prepend(modalClose);
 }
 
 function openWindow(url, windowName){
@@ -324,17 +324,17 @@ function menuClick(event) {
 }
 
 function restart(event) {
-	if (event.key === 'Enter') {
-		document.removeEventListener('keyup', restart, false);
-		document.removeEventListener('click', restartClick, false);
-		gameStart();
-	}
+	// if (event.key === 'Enter') {
+	// 	document.removeEventListener('keyup', restart, false);
+	// 	document.removeEventListener('click', restartClick, false);
+	// 	gameStart();
+	// }
 }
 
 function restartClick(){
-	document.removeEventListener('keyup', restart, false);
-	document.removeEventListener('click', restartClick, false);
-	gameStart();
+	// document.removeEventListener('keyup', restart, false);
+	// document.removeEventListener('click', restartClick, false);
+	// gameStart();
 }
 
 function closeModal(){
