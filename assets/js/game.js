@@ -169,7 +169,7 @@ function startMenu(){
 
     let menuBtn = document.createElement('button');
     menuBtn.className = 'menuBtn';
-    menuBtn.innerText = 'Play';
+    menuBtn.innerText = 'Jouer';
     menuBtn.j = 5;
 
     menuBtn.addEventListener("click", menuClick);
@@ -221,7 +221,7 @@ function gameStart(){
 
 	let notification = document.createElement('div');
 	notification.id = 'notification';
-	notification.innerText = 'Start guessing!'
+	notification.innerText = 'Devinez!'
 	container.append(notification);
 
 	let keyLayoutTop = 'QWERTYUIOP';
@@ -437,7 +437,7 @@ function checkAnswer(wordRow, answer){
 			localStorage.setItem('streak' + difficulty + level, currentStreak);
 		}
 
-		let notification = 'Well done, you won!';
+		let notification = 'Bien joué! Revenez demain.';
 		// gameOver();
 
 		setTimeout(function(){
@@ -445,7 +445,7 @@ function checkAnswer(wordRow, answer){
 		}, 250);
 	}
 	else if(currentRow == 5){
-		let notification = 'You lost. The word was ' + chosenWord + '.';
+		let notification = 'Vous avez perdu. Le mot était ' + chosenWord + '.';
 		userScore = userScore - 10;
 		currentStreak = 0;
 		gameOver();
