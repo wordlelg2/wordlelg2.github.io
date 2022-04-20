@@ -477,7 +477,7 @@ function submitWord(wordRow){
 			checkAnswer(wordRow, answer);		
 		}else{
 			remNotification = 0;
-			document.getElementById('notification').innerText = 'Ce mot n\'est pas la list';
+			document.getElementById('notification').innerText = 'Ce mot n\'est pas dans la list';
 		}
 	}else{
 		remNotification = 0;
