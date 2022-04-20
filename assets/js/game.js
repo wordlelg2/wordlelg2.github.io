@@ -469,7 +469,7 @@ function submitWord(wordRow){
 				for(i = 0; i < mustUse.length; i++){
 					if(!answer.includes(mustUse[i])){
 						remNotification = 0;
-						document.getElementById('notification').innerText = 'You must use found characters';
+						document.getElementById('notification').innerText = 'Voud devez utiliser les lettres trouve precedement';
 						return;
 					}
 				}
@@ -477,11 +477,11 @@ function submitWord(wordRow){
 			checkAnswer(wordRow, answer);		
 		}else{
 			remNotification = 0;
-			document.getElementById('notification').innerText = 'Word not in list';
+			document.getElementById('notification').innerText = 'Ce mot n\'est pas la list';
 		}
 	}else{
 		remNotification = 0;
-		document.getElementById('notification').innerText = 'You must enter ' + maxBlock + ' characters';
+		document.getElementById('notification').innerText = 'Vous devez entrer ' + maxBlock + ' lettres max';
 	}
 }
 
