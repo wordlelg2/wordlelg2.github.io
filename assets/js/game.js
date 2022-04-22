@@ -205,6 +205,15 @@ function gameStart(){
 
 	addLogo();
 
+	let navBar = document.createElement('div');
+	navBar.className = 'nav_bar';
+		let difficultySelect = document.createElement('button');
+		difficultySelect.id = 'jour';
+		difficultySelect.className = 'btn';
+		difficultySelect.innerText = "Wordle quotidien lg2 | Jour " + Math.floor(Difference_In_Days);
+		navBar.append(difficultySelect);
+	container.append(navBar);
+
 	let gameArea = document.createElement('div');
 	gameArea.className = 'game_area';
 	for(i = 0; i < 6; i++){
