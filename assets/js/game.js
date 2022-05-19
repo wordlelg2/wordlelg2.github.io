@@ -193,7 +193,7 @@ function gameStart(){
 	container.innerHTML = '';
 	let wordType = listOfWords;
 
-	var date1 = new Date("04/19/2022 00:00:00");
+	var date1 = new Date("05/19/2022 00:00:00");
 	var date2 = new Date(); 
 
 	var Difference_In_Time = date2.getTime() - date1.getTime();
