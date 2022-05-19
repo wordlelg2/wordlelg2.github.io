@@ -210,7 +210,7 @@ function gameStart(){
 		let difficultySelect = document.createElement('h1');
 		difficultySelect.id = 'jour';
 		difficultySelect.className = 'jour';
-		difficultySelect.innerText = "Wordle quotidien lg2 | Jour " + Math.floor(Difference_In_Days);
+		difficultySelect.innerText = "Wordle quotidien lg2 | Jour " + (Math.floor(Difference_In_Days) + 31);
 		navBar.append(difficultySelect);
 	container.append(navBar);
 
